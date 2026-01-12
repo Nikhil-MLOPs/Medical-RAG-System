@@ -15,7 +15,8 @@ dependencies = [
     "mlflow",
     "dvc",
     "pytest",
-    "httpx"
+    "httpx",
+    "pypdf>=6.6.0",
 ]
 
 [tool.pytest.ini_options]
