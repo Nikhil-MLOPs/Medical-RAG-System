@@ -1,0 +1,23 @@
+[project]
+name = "medical-rag-system"
+version = "0.1.0"
+description = "Production-grade Medical RAG System"
+requires-python = ">=3.12"
+
+dependencies = [
+    "langchain",
+    "langchain-community",
+    "fastapi",
+    "uvicorn",
+    "pydantic",
+    "chromadb",
+    "streamlit",
+    "mlflow",
+    "dvc",
+    "pytest",
+    "httpx"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra -q"
