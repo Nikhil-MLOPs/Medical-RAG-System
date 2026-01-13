@@ -1,0 +1,19 @@
+llm:
+  provider: ollama
+  model: mistral
+  temperature: 0.1
+
+prompt:
+  system: |
+    You are a medical assistant.
+    Answer the question ONLY using the provided context.
+    If the answer is not present in the context, say "I do not know".
+
+  human: |
+    Context:
+    {context}
+
+    Question:
+    {question}
+
+    Answer:
