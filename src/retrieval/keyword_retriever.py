@@ -31,6 +31,10 @@ def get_keyword_retriever():
     retrieval_config = yaml.safe_load(CONFIG_PATH.read_text())
     documents = load_documents()
 
+    if not documents:
+        logger.warning("No documents found for keyword retrieval")
+        return None
+
     retriever = BM25Retriever.from_documents(documents)
     retriever.k = retrieval_config["keyword_k"]
 
