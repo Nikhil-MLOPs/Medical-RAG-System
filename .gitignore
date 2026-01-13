@@ -5,3 +5,4 @@ logs/
 .dvc/cache/
 mlruns/
 .env
+data/chroma/

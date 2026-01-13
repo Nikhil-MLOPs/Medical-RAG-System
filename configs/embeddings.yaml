@@ -1,0 +1,4 @@
+provider: ollama
+model: nomic-embed-text
+batch_size: 16
+persist_directory: data/chroma
